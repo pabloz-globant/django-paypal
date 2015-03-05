@@ -3,7 +3,8 @@
 from __future__ import unicode_literals
 
 from six import b
-from six.moves.urllib.request import urlopen
+from urllib2 import urlopen
+# from six.moves.urllib.request import urlopen
 
 from paypal.standard.models import PayPalStandardBase
 from paypal.standard.ipn.signals import valid_ipn_received, invalid_ipn_received, payment_was_flagged, payment_was_refunded, payment_was_reversed, payment_was_successful, recurring_create, recurring_payment, recurring_cancel, recurring_skipped, recurring_failed, subscription_cancel, subscription_signup, subscription_eot, subscription_modify
